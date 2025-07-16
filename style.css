@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    width: 1400px;
+    margin: auto;
+}
+
+.header__container {
+    padding: 150px 0 120px 0;
+    text-align: center;
+}
+
+.header__rectangle {
+    position: absolute;
+    height: 118px;
+    width: 1400px;
+    background-color: rgba(46, 41, 42, 1);
+    opacity: 1;
+}
+
+.header__cinema-name-top {
+    z-index: 2;
+    transition: 1s;
+    position: relative;
+}
+
+.header__cinema-name-bottom {
+    z-index: 2;
+    transition: 1s;
+    position: relative;
+    top: -4px;
+}
+
+.header__cinema-text {
+    width: 1400px;
+    letter-spacing: 0.3em;
+    font-weight: 900;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.header__wrap {
+    position: relative;
+}
+
+.header__rectangle {
+    position: absolute;
+    top: -160px;
+    z-index: -1;
+}
+
+.header__cinema-curtain-top {
+    transition: 1s;
+    width: 1400px;
+    height: 150px;
+    top: 155px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+}
+
+.header__cinema-curtain-bottom {
+    transition: 1s;
+    width: 1400px;
+    height: 150px;
+    position: absolute;
+    top: 305px;
+    background-color: rgb(255, 255, 255);
+}
+
+.header__cinema-animation-trigger {
+    transform: translate(150px, 60px);
+    position: absolute;
+    z-index: 3;
+    height: 190px;
+    width: 1124px;
+}
+
+.header__cinema-animation-trigger:hover+.header__cinema-name-top {
+    transform: translate(0px, -66px);
+}
+
+.header__cinema-animation-trigger:hover+.header__cinema-name-top+.header__cinema-name-bottom {
+    transform: translate(0px, 68px);
+}
+
+.header__cinema-animation-trigger:hover+.header__cinema-name-top+.header__cinema-name-bottom+.header__cinema-curtain-top {
+    transform: translate(0px, -66px);
+}
+
+.header__cinema-animation-trigger:hover+.header__cinema-name-top+.header__cinema-name-bottom+.header__cinema-curtain-top+.header__cinema-curtain-bottom {
+    transform: translate(0px, 68px);
+}
+
+.hall-of-fame__container {
+    padding: 50px 0 123px 0;
+
+}
+
+.title {
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.hall-of-fame__title {
+    margin-bottom: 25px;
+}
+
+.hall-of-fame__all-images {
+    position: relative;
+    display: flex;
+    width: 1400px;
+    height: 432px;
+}
+
+.hall-of-fame__image {
+    width: 280px;
+    object-fit: cover;
+    transition: 1s;
+}
+
+.hall-of-fame__animation-trigger {
+    position: absolute;
+    height: 432px;
+    width: 280px;
+}
+
+.hall-of-fame__animation-trigger-orange {
+    left: 0;
+}
+
+.hall-of-fame__animation-trigger-cyan {
+    left: 280px;
+}
+
+.hall-of-fame__animation-trigger-green {
+    left: 560px
+}
+
+.hall-of-fame__animation-trigger-blue {
+    left: 840px;
+}
+
+.hall-of-fame__animation-trigger-yellow {
+    left: 1120px;
+}
+
+.hall-of-fame__animation-trigger-orange:hover+.hall-of-fame__animation-trigger-cyan+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange {
+    width: 800px;
+}
+
+.hall-of-fame__animation-trigger-orange:hover+.hall-of-fame__animation-trigger-cyan+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan,
+.hall-of-fame__animation-trigger-orange:hover+.hall-of-fame__animation-trigger-cyan+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green,
+.hall-of-fame__animation-trigger-orange:hover+.hall-of-fame__animation-trigger-cyan+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue,
+.hall-of-fame__animation-trigger-orange:hover+.hall-of-fame__animation-trigger-cyan+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue+.hall-of-fame__image-yellow {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-cyan:hover+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-cyan:hover+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan {
+    width: 800px;
+}
+
+.hall-of-fame__animation-trigger-cyan:hover+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green,
+.hall-of-fame__animation-trigger-cyan:hover+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue,
+.hall-of-fame__animation-trigger-cyan:hover+.hall-of-fame__animation-trigger-green+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue+.hall-of-fame__image-yellow {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-green:hover+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange,
+.hall-of-fame__animation-trigger-green:hover+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-green:hover+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green {
+    width: 800px;
+}
+
+.hall-of-fame__animation-trigger-green:hover+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue,
+.hall-of-fame__animation-trigger-green:hover+.hall-of-fame__animation-trigger-blue+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue+.hall-of-fame__image-yellow {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-blue:hover+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange,
+.hall-of-fame__animation-trigger-blue:hover+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan,
+.hall-of-fame__animation-trigger-blue:hover+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-blue:hover+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue {
+    width: 800px;
+}
+
+.hall-of-fame__animation-trigger-blue:hover+.hall-of-fame__animation-trigger-yellow+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue+.hall-of-fame__image-yellow {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-yellow:hover+.hall-of-fame__image-orange {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-yellow:hover+.hall-of-fame__image-orange+.hall-of-fame__image-cyan {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-yellow:hover+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-yellow:hover+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue {
+    width: 150px;
+}
+
+.hall-of-fame__animation-trigger-yellow:hover+.hall-of-fame__image-orange+.hall-of-fame__image-cyan+.hall-of-fame__image-green+.hall-of-fame__image-blue+.hall-of-fame__image-yellow {
+    width: 800px;
+}
+
+.collection__title {
+    margin-bottom: 25px;
+}
+
+.collection__films {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+.collection__films-bottom {
+    margin-top: 27px;
+}
+
+.collection__image {
+    width: 330px;
+    height: 479px;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.collection-info {
+    width: 330px;
+    height: 362px;
+    background-color: rgba(28, 27, 27, 0.8);
+    opacity: 0;
+    position: absolute;
+    top: 117px;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+    z-index: 3;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+.collection__animation-trigger {
+    width: 330px;
+    height: 479px;
+    background-color: blue;
+    opacity: 0;
+    position: absolute;
+    z-index: 4;
+}
+
+.collection__animation-trigger-second,
+.collection__animation-trigger-sixth,
+.collection-info__second,
+.collection-info__sixth {
+    left: 357px;
+}
+
+.collection__animation-trigger-third,
+.collection__animation-trigger-seventh,
+.collection-info__third,
+.collection-info__seventh {
+    left: 714px;
+}
+
+.collection__animation-trigger-fourth,
+.collection__animation-trigger-eighth,
+.collection-info__fourth,
+.collection-info__eighth {
+    left: 1071px;
+}
+
+.collection-info__title {
+    font-size: 25px;
+    font-weight: 700;
+    width: 290px;
+    margin: auto;
+    margin-top: 19px;
+}
+
+.collection-info__genre {
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    line-height: 0.9;
+}
+
+.collection-info__genre-fourth,
+.collection-info__genre-fifth,
+.collection-info__genre-sixth {
+    top: 120px;
+}
+
+.collection-info__genre span {
+    color: rgba(71, 177, 152, 1);
+}
+
+.collection-info__buy {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 274px;
+    padding: 17px 0 17px 0;
+    position: absolute;
+    background-color: rgba(71, 177, 152, 1);
+    text-align: center;
+    top: 279px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.collection-info__page {
+    display: block;
+    text-decoration: none;
+    color: rgba(71, 177, 152, 1);
+    left: 40%;
+    position: absolute;
+    top: 180px;
+}
+
+.collection__animation-trigger-first:hover+.collection__image-first,
+.collection__animation-trigger-second:hover+.collection__image-second,
+.collection__animation-trigger-third:hover+.collection__image-third,
+.collection__animation-trigger-fourth:hover+.collection__image-fourth,
+.collection__animation-trigger-fifth:hover+.collection__image-fifth,
+.collection__animation-trigger-sixth:hover+.collection__image-sixth,
+.collection__animation-trigger-seventh:hover+.collection__image-seventh,
+.collection__animation-trigger-eighth:hover+.collection__image-eighth {
+    width: 308px;
+    height: 447px;
+    transform: translate(11px, 16px);
+    margin-right: 22px;
+}
+
+.collection__animation-trigger-first:hover+.collection__image-first+.collection-info__first,
+.collection__animation-trigger-second:hover+.collection__image-second+.collection-info__second,
+.collection__animation-trigger-third:hover+.collection__image-third+.collection-info__third,
+.collection__animation-trigger-fourth:hover+.collection__image-fourth+.collection-info__fourth,
+.collection__animation-trigger-fifth:hover+.collection__image-fifth+.collection-info__fifth,
+.collection__animation-trigger-sixth:hover+.collection__image-sixth+.collection-info__sixth,
+.collection__animation-trigger-seventh:hover+.collection__image-seventh+.collection-info__seventh,
+.collection__animation-trigger-eighth:hover+.collection__image-eighth+.collection-info__eighth {
+    opacity: 1;
+    width: 308px;
+    height: 338px;
+    transform: translate(11px, 8px);
+}
+
+.collection-info__genre-seventh {
+    width: 300px;
+    margin: auto;
+}
+
+.more__container {
+    height: 224px;
+    text-align: right;
+}
+
+.more__text {
+    margin-top: 40px;
+    font-size: 50px;
+    font-weight: 400;
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(46, 41, 42, 1);
+}
+
+.footer__container {
+    width: 100%;
+    height: 492px;
+    background-color: rgba(46, 41, 42, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__text {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+}
